@@ -23,8 +23,8 @@ module Jekyll
 
       # Self should be a Jekyll::SeoTag::Drop instance (when extending the module)
       def json_ld
-        Jekyll.logger.warn "Jekyll::SeoTag::JSONLD is deprecated"
-        @json_ld ||= JSONLDDrop.new(self)
+        # Completely disable JSON-LD output
+        ""
       end
     end
   end
